@@ -1,0 +1,65 @@
+<!-- 顶部logo区域 -->
+<div id="top">
+	<div class="w1200">
+		<a href="#" class="logo1"></a>
+		<a href="#" class="logo2"></a>
+		<div class="login">
+			<a href="#">登录</a>
+			<span>|</span>
+			<a href="#">注册</a>
+		</div>
+  </div>
+</div>
+
+<!--导航区-->
+<div id="navbars">
+	<div class="bg">
+  	<h1>临床医学科学数据中心  </h1>
+  	<h5>Clinical Medicine Information Center</h5>	
+  </div>
+	<div class="navbox">
+		<ul class="navlist">
+			<li><a class="home" href="<%= url_for '/' %>">首页</a></li>
+			<li><a href="<%= url_for '/' %>">数据共享</a>
+				<div class="sublist">
+			  	<a  href="/datashare/disease">疾病</a>
+			  	<a  href="/datashare/image">医学影像</a>
+			  	<a  href="/datashare/diagnosis">临床诊断</a>
+			  	<a  href="/datashare/manage">管理及其他</a>
+			  </div>
+			</li>
+			<li><a href="/frontierdynamic">前沿动态</a>
+				<div class="sublist">
+			  	<a  href="/frontierdynamic/research">医学研究</a>
+			  	<a  href="/frontierdynamic/centralwork">中心工作</a>
+			  </div>
+			</li>
+			<li><a href="/datasubmit">数据提交系统</a></li>
+			<li><a href="/oaplatform">OA工作平台</a></li>
+			<li><a href="/aboutus">关于我们</a>
+				<div class="sublist">
+			  	<a  href="/aboutus/platform">平台简介</a>
+			  	<a  href="/aboutus/central">中心简介</a>
+			  	<a  href="/aboutus/webnav">网站导航</a>
+			  </div>
+			</li>
+		</ul>
+	</div>
+</div>
+
+<!-- 搜索框区域 -->
+<div class="w1200">
+	<div class="search">
+    <a href="#" class="logo"> </a>
+    <form action="#" class="search">
+      <input type="text" name="searchWord" placeholder="关键词"  class="search1">
+      <input type="submit"  class="search2" value="">
+      <div class="search3">
+	      <div class="subsearch3"><input type="checkbox" name="文本" class="subsearchcheck"><b class="searchtype">文本</b></div>
+	      <div class="subsearch3"><input type="checkbox" name="表格" class="subsearchcheck"><b class="searchtype">表格</b></div>
+	      <div class="subsearch3"><input type="checkbox" name="图片" class="subsearchcheck"><b class="searchtype">图片</b></div>
+	      <div class="subsearch3"><input type="checkbox" name="视频" class="subsearchcheck"><b class="searchtype">视频</b></div>
+      </div>
+    </form>
+  </div>
+</div>

@@ -1,0 +1,50 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>临床医学科学数据中心</title>
+<link rel="stylesheet" type="text/css" href="/lib/ajax/index.css"/>
+<script language="JavaScript" src="/lib/ajax/jquery.min.js"></script>
+<script language="JavaScript" src="/lib/ajax/bootstrap.min.js"></script>
+	<script>
+	  $(function () {
+	    $('#myTab a:first').tab('show')
+	  })
+	</script>
+</head>
+<body>
+<%= erb :title %>
+<div id="detail">
+	<div class="w1200" >		
+    <%= yield %>
+		<div class="rightside">
+	  	<ul class="tablist">
+	  		<li ><a  href="#">首页</a></li>
+	  		<li ><a  href="#">数据共享</a></li>
+	  		<ul class="subtablist">
+		  		<li ><a href="#">疾病</a></li>
+		  		<li ><a  href="#">医学影像</a></li>
+		  		<li ><a  href="#">病理</a></li>
+		  		<li ><a  href="#">临床诊断</a></li>
+		  		<li ><a  href="#">管理及其他</a></li>
+		  	</ul>
+	  		<li ><a href="#">前沿动态</a></li>
+	  		<ul class="subtablist">
+		  		<li ><a href="#">医学研究</a></li>
+		  		<li ><a href="#">中心工作</a></li>
+	  		</ul>
+	  		<li ><a href="#">数据提交系统</a></li>
+	  		<li ><a href="#">OA工作平台</a></li>
+	  		<li ><a href="#">关于我们</a></li>
+	  		<ul class="subtablist">
+		  		<li ><a href="#">平台简介</a></li>
+		  		<li ><a href="#">中心简介</a></li>
+		  		<li ><a href="#">网站导航</a></li>
+	  		</ul>
+	  	</ul>
+	  </div>
+  </div>
+</div>
+<%= erb :footer %>
+</body>
+</html>

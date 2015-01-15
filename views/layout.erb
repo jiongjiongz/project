@@ -1,0 +1,22 @@
+
+<!-- 渲染模板，在加载所有其他文件之前先加载渲染模板 ，后台文件缺省时为默认layout.erb-->
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>临床医学科学数据中心</title>
+<link rel="stylesheet" type="text/css" href="/lib/ajax/index.css"/>
+<script language="JavaScript" src="/lib/ajax/jquery.min.js"></script>
+<script language="JavaScript" src="/lib/ajax/bootstrap.min.js"></script>
+	<script>
+	  $(function () {
+	    $('#myTab a:first').tab('show')
+	  })
+	</script>
+</head>
+<body>
+<%= erb :title %>
+<%= yield %>
+<%= erb :footer %>
+</body>
+</html>
