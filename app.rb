@@ -8,9 +8,9 @@
 # gem install digest-sha2
 require 'sinatra'
 require 'sinatra/url_for'
-#require 'sinatra/static_assets'
-#require 'sinatra/flash'
-#require 'digest/sha2'
+require 'sinatra/static_assets'
+require 'sinatra/flash'
+require 'digest/sha2'
 
 
 
